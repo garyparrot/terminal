@@ -231,11 +231,11 @@ void CascadiaSettings::_CreateDefaultKeybindings()
     // TODO:MSFT:20700157 read our settings from some source, and configure
     //      keychord,action pairings from that file
     keyBindings.SetKeyBinding(ShortcutAction::NewTab,
-                               KeyChord{ KeyModifiers::Ctrl,
+                               KeyChord{ KeyModifiers::Ctrl | KeyModifiers::Shift,
                                          static_cast<int>('T') });
 
     keyBindings.SetKeyBinding(ShortcutAction::CloseTab,
-                               KeyChord{ KeyModifiers::Ctrl,
+                               KeyChord{ KeyModifiers::Ctrl | KeyModifiers::Shift,
                                          static_cast<int>('W') });
     keyBindings.SetKeyBinding(ShortcutAction::OpenSettings,
                                KeyChord{ KeyModifiers::Ctrl,
